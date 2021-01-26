@@ -3,7 +3,7 @@
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-struct Stats compute_statistics(const float* numberset, int setlength) 
+void compute_statistics(const float* numberset, int setlength) 
 {
     int i=0,a=0;
     struct Stats s;
