@@ -5,10 +5,11 @@ int ledAlertCallCount = 0;
 
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
-    int i=0,a=0;
+    int i=0;
+    float a=0;
     struct Stats s;
     
-    for(i=0;i<4;i++)
+    for(i=0;i<setlength;i++)
     {
         a = a+*(numberset + i);
     }
