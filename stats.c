@@ -8,7 +8,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     int i=0,a=0;
     struct Stats s;
     
-    for(i=0;i<setlength;i++)
+    for(i=0;i<4;i++)
     {
         a = a+*(numberset + i);
     }
