@@ -14,4 +14,11 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     }
     s.average = a/setlength;
     
+    return s;
+}
+
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+{
+    emailAlertCallCount = 1;
+    ledAlertCallCount = 1;
 }
