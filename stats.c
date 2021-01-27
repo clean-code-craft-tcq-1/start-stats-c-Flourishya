@@ -13,7 +13,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     {
         a = a+*(numberset + i);
         b = ((*(numberset + i))>b) ? *(numberset + i):b;
-        c = ((*(numberset + i))<b) ? *(numberset + i):b;
+        c = ((*(numberset + i))<c) ? *(numberset + i):c;
     }
     s.average = a/setlength;
     s.max = b;
